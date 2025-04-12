@@ -1,0 +1,168 @@
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* #customers tr:nth-child(even){background-color: #f2f2f2;} */
+
+#customers tr:hover {background-color: #dddddd5e;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #048656f5;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1pt solid black;
+}
+.App {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  fieldset {
+    display: flex;
+    width: 350px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    flex-direction: column;
+    height: 420px;
+    
+    
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  sup {
+    color: red;
+    top: -2px;
+    font-size: 95%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  input,
+  select {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 32px;
+    padding: 20px 8px;
+  }
+  
+  .Field {
+    position: relative;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-left:20px ;
+    padding-right: 20px;
+  }
+  
+  .FieldError {
+    position: absolute;
+    bottom: -6px;
+    color: red;
+    font-size: 12px;
+  }
+  
+  .Row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  button {
+    padding: 12px;
+    width: 275px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #048656f5;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px; 
+  }
+  
+  button:disabled,
+  button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    
+  }
+  
+  h2{
+    padding-bottom: 20px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 700;
+   }
+  
+  .container{
+    background-color: white;
+    height: 420px;
+    margin-left: 40px;
+    border-radius: 30px;
+  }
+  
+  .box {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    margin: -4px;
+  }
+  
+  img{
+    width: 80px;
+    margin-left: 35%;
+    height: 60px;
+  }
+  @media screen and (max-width: 390px) {
+    /* Adjust styles for screens with a width of 390px or less */
+    .App {
+      justify-content: flex-start;
+    }
+    
+    button {
+      width: 100%;
+      margin: 10px;
+    }
+    
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    img {
+      width: 60px;
+      margin-left: 30%;
+      height: auto;
+    }
+  }
